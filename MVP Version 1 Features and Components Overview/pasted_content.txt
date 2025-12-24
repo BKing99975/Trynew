@@ -1,0 +1,80 @@
+Build a modern, responsive full-stack website for a Technical Director / production services brand called “(YOUR BRAND NAME)”.
+
+GOALS
+- Position as a “one-stop shop for full-scale productions” (lighting, staging, sound, music, production).
+- Offer a free tier + paid membership tier + premium consulting (booking).
+- Sell digital downloads (templates, cue sheets) and optionally physical kits (gaff tape / stage kit).
+- Provide a paid client portal with gated resources, progress tracking for modules, and support tickets.
+- Include a portfolio with photos/videos/testimonials.
+
+DESIGN
+- Clean, professional, production/tech vibe (dark mode friendly).
+- Strong hero section with CTA buttons: “Explore Resources” and “Book a Consult”.
+- SEO-friendly pages, fast, mobile-first.
+
+SITE MAP / PAGES
+1) Home (/)
+   - Hero: “Your One-Stop Shop for Full-Scale Productions”
+   - Services grid: Lighting / Staging / Sound / Music / Production
+   - “About the TD” section (bio + experience highlights)
+   - How it works: Free → Pro → Premium Consulting
+   - Testimonials
+   - CTA banner + footer
+
+2) Pricing (/pricing)
+   - Free Plan: tutorials, blog, resource links
+   - Pro Plan: $24.99/mo (advanced guides, plots, diagrams, cue templates, videos/modules)
+   - Premium: $500–$2,000/project (consulting + direct support + custom setup)
+   - Include “Compare plans” table and FAQ
+
+3) Resources (/resources)
+   - Tabs or filters: Lighting, Sound, Stage Mgmt, Scheduling, Safety, Music cues
+   - Free vs Pro content clearly labeled
+   - Each resource has: title, category, summary, download button if applicable
+
+4) Project Management Toolkit (/toolkit)
+   - Downloadable templates (checklists, schedules, rehearsal plans)
+   - “Readiness Checker” interactive wizard that asks what the user has and generates a checklist of what they still need
+   - Save results to the user’s account (for logged-in users)
+
+5) Booking (/book)
+   - Let users book: consult, workshop, on-site assistance
+   - Integrate Calendly (embed) OR build native booking (admin-managed slots)
+   - Intake form + confirmation email
+
+6) Shop (/shop)
+   - Digital products: cue sheets, lighting plot templates, stage diagrams, script breakdown templates
+   - Optional physical kits
+   - Stripe checkout
+
+7) Client Portal (/portal)
+   - Login / signup
+   - Dashboard: subscription status, saved Readiness Checker results, purchased downloads
+   - Learning Modules: video lessons + progress tracking
+   - Support: ticketed questions / forum-style Q&A (start with ticket system)
+
+8) Portfolio (/portfolio)
+   - Grid of projects with photos/videos, role, venue, highlights
+   - Testimonials section
+
+9) Contact (/contact)
+   - Contact form + email capture
+
+AUTH / ROLES
+- Auth system with roles: guest, free, pro, admin
+- Pro resources gated behind subscription.
+- Admin dashboard to manage resources, products, modules, and portfolio items.
+
+INTEGRATIONS
+- Stripe for subscriptions + one-time purchases.
+- Email notifications for bookings and contact form.
+- Video hosting via Vimeo (use placeholder URLs for now).
+- Use a database for users, resources, purchases, readiness results, tickets, modules progress.
+
+TECH
+- Use Next.js + Tailwind + a DB ORM (Prisma) and Stripe.
+- Create clean reusable components, accessible UI, and a consistent layout.
+- Include seed data (sample resources/products/portfolio items) so the site looks complete.
+
+DELIVERABLE
+- Generate the full app with working navigation, auth, Stripe test mode, and a functional Readiness Checker wizard.
